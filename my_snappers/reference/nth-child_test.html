@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>nth-childテスト</title>
+		<style>
+/* 疑似クラス:nth-child() */
+/* :nth-child()の()内に、数値や数式、キーワードを指定することで、あてはまる要素を選択します。
+li要素や、table要素のtr、td要素など要素が多い場合、規則的な書式を簡単に設定できます。 */
+/* 例 :nth-child(2) 2つ目の要素 */
+/* 例 :nth-child(3n) 3の倍数の要素 */
+/* 例 :nth-child(odd) 奇数番目の要素 */
+/* 例 :nth-child(even) 偶数番目の要素 */
+			li:nth-child(odd) {
+				font-weight: bold;
+				color: darkturquoise;
+			}
+			td:nth-child(even) {
+				background-color: red;
+			}
+          tr:nth-child(even){
+            background-color: green;
+          }
+          tr:nth-child(1) {
+            background-color: yellow;
+          }
+          
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1番目のli要素</li>
+			<li>2番目のli要素</li>
+			<li>3番目のli要素</li>
+			<li>4番目のli要素</li>
+			<li>5番目のli要素</li>
+			<li>6番目のli要素</li>
+			<li>7番目のli要素</li>
+			<li>8番目のli要素</li>
+			<li>9番目のli要素</li>
+		</ul>
+		<table border="1">
+			<tr>
+				<td>1行目1列目</td>
+				<td>1行目2列目</td>
+				<td>1行目3列目</td>
+				<td>1行目4列目</td>
+				<td>1行目5列目</td>
+				<td>1行目6列目</td>
+				<td>1行目7列目</td>
+				<td>1行目8列目</td>
+				<td>1行目9列目</td>
+			</tr>
+			<tr>
+				<td>2行目1列目</td>
+				<td>2行目2列目</td>
+				<td>2行目3列目</td>
+				<td>2行目4列目</td>
+				<td>2行目5列目</td>
+				<td>2行目6列目</td>
+				<td>2行目7列目</td>
+				<td>2行目8列目</td>
+				<td>2行目9列目</td>
+			</tr>
+			<tr>
+				<td>3行目1列目</td>
+				<td>3行目2列目</td>
+				<td>3行目3列目</td>
+				<td>3行目4列目</td>
+				<td>3行目5列目</td>
+				<td>3行目6列目</td>
+				<td>3行目7列目</td>
+				<td>3行目8列目</td>
+				<td>3行目9列目</td>
+			</tr>
+			<tr>
+				<td>4行目1列目</td>
+				<td>4行目2列目</td>
+				<td>4行目3列目</td>
+				<td>4行目4列目</td>
+				<td>4行目5列目</td>
+				<td>4行目6列目</td>
+				<td>4行目7列目</td>
+				<td>4行目8列目</td>
+				<td>4行目9列目</td>
+			</tr>
+			<tr>
+				<td>5行目1列目</td>
+				<td>5行目2列目</td>
+				<td>5行目3列目</td>
+				<td>5行目4列目</td>
+				<td>5行目5列目</td>
+				<td>5行目6列目</td>
+				<td>5行目7列目</td>
+				<td>5行目8列目</td>
+				<td>5行目9列目</td>
+			</tr>
+		</table>
+	</body>
+</html>
